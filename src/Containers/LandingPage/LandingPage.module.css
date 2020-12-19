@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content h1 {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    color: #272343;
+    font-size: 60px;
+}
+
+.content p {
+    display: flex;
+    position: absolute;
+    top: 57%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #272343;
+    font-size:18px;
+}
+
+.content img{
+    height: 40vw;
+    width: 50vw;
+    padding: 3vw;
+    float: right;
+    color: #272343;
+}
+
+.left {
+    left: 0;
+    width: 50%;
+    right: 50%;
+    background-color: #e3f6f5;
+}
