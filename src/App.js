@@ -12,6 +12,17 @@ import LoginPage from "./Containers/LoginPage/LoginPage";
 import UploadPage from "./Containers/UploadPage/UploadPage";
 import ViewPage from "./Containers/ViewPage/ViewPage";
 import VerifyPage from "./Containers/VerifyPage/VerifyPage";
+import DisplayPage from "./Containers/DisplayPage/DisplayPage";
+
+import store from "./redux/store";
+import { Route, Switch } from "react-router-dom";
+import LandingPage from "./Containers/LandingPage/LandingPage";
+import RegisterPage from "./Containers/RegisterPage/RegisterPage";
+import ResultsPage from "./Containers/ResultsPage/ResultsPage";
+import LoginPage from "./Containers/LoginPage/LoginPage";
+import UploadPage from "./Containers/UploadPage/UploadPage";
+import ViewPage from "./Containers/ViewPage/ViewPage";
+import VerifyPage from "./Containers/VerifyPage/VerifyPage";
 
 function App() {
   return (
@@ -26,6 +37,7 @@ function App() {
         <Route path="/upload" component={UploadPage} />
         <Route path="/view" component={ViewPage} />
         <Route path="/verify" component={VerifyPage} />
+        <Route path="/display" component={DisplayPage} />
         <Route component={Error} />
       </Switch>
     </Provider>
