@@ -62,6 +62,14 @@
                 inset -8px -8px 8px #ffffff;
   }
 
+  .text{
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+    padding: 10px;
+  }
+
   .fields svg {
     height: 22px;
     margin:0 10px -3px 25px;
