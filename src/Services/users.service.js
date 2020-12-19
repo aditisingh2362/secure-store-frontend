@@ -1,6 +1,11 @@
 import axios from "axios";
 
-import { REGISTER_URL, RESULTS_URL, VERIFY_OTP_URL } from "../Utils/constants";
+import {
+  REGISTER_URL,
+  RESULTS_URL,
+  VERIFY_OTP_URL,
+  VERIFY_URL,
+} from "../Utils/constants";
 
 export const register = async (roll) => {
   try {
@@ -26,6 +31,17 @@ export const fetchResults = async (roll, sem) => {
   try {
     const { data } = await axios.get(`${RESULTS_URL}?roll=${roll}&sem=${sem}`);
 
+    return data;
+  } catch (err) {
+    throw err.response.data;
+  }
+};
+
+export const verifyGrades = async (roll, sem, targetHash) => {
+  try {
+    const { data } = await axios.get(
+      `${VERIFY_URL}?roll=${roll}&sem=${sem}&targetHash=${targetHash}`
+    );
     return data;
   } catch (err) {
     throw err.response.data;

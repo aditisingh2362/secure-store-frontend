@@ -47,7 +47,7 @@ function ResultsPage(props) {
       const decryptedResult = private_key.decrypt(data.result, "utf8");
       console.log(decryptedResult);
 
-      //   history.push("/display", { result: decryptedResult });
+      history.push("/display", { result: decryptedResult });
     } catch (err) {
       setIsLoading(false);
       notify("Something went wrong!", "error");

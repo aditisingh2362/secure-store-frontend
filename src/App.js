@@ -14,16 +14,6 @@ import ViewPage from "./Containers/ViewPage/ViewPage";
 import VerifyPage from "./Containers/VerifyPage/VerifyPage";
 import DisplayPage from "./Containers/DisplayPage/DisplayPage";
 
-import store from "./redux/store";
-import { Route, Switch } from "react-router-dom";
-import LandingPage from "./Containers/LandingPage/LandingPage";
-import RegisterPage from "./Containers/RegisterPage/RegisterPage";
-import ResultsPage from "./Containers/ResultsPage/ResultsPage";
-import LoginPage from "./Containers/LoginPage/LoginPage";
-import UploadPage from "./Containers/UploadPage/UploadPage";
-import ViewPage from "./Containers/ViewPage/ViewPage";
-import VerifyPage from "./Containers/VerifyPage/VerifyPage";
-
 function App() {
   return (
     <Provider store={store}>

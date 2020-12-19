@@ -60,7 +60,7 @@ function NavBar(props) {
     <>
       <div className={styles.navbar}>
         <div className={styles.brand} onClick={() => history.push("/")}>
-          <h1 className={styles.title}>IIITM Results </h1>
+          <h1 className={styles.title}>Secure Store </h1>
         </div>
         <div
           className={styles.links}
