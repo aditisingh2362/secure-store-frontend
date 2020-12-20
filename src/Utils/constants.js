@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://aasf-api.centralindia.cloudapp.azure.com:4000";
 
 const USERS_URL = `${BASE_URL}/users`;
 export const REGISTER_URL = `${USERS_URL}/register`;
